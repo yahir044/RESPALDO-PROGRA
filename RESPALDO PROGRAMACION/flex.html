@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Flexbox con Ejemplos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            flex: 1;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .vertical {
+            flex-direction: column;
+        }
+
+        .example-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guía de Flexbox con Ejemplos</h1>
+
+    <h2>1. <code>flex-direction</code></h2>
+    <p>
+        La propiedad <code>flex-direction</code> define la dirección en la que los elementos flexibles son colocados dentro del contenedor. Los valores más comunes son:
+    </p>
+    <ul>
+        <li><strong>row:</strong> Coloca los elementos en una fila horizontal (por defecto).</li>
+        <li><strong>column:</strong> Coloca los elementos en una columna vertical.</li>
+    </ul>
+
+    <div class="example-title">Ejemplo con <code>flex-direction: row</code> (por defecto):</div>
+    <div class="container">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <div class="example-title">Ejemplo con <code>flex-direction: column</code>:</div>
+    <div class="container vertical">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <h2>2. <code>justify-content</code></h2>
+    <p>
+        La propiedad <code>justify-content</code> alinea los elementos a lo largo del eje principal (horizontal en <code>row</code>, vertical en <code>column</code>). Los valores más comunes son:
+    </p>
+    <ul>
+        <li><strong>flex-start:</strong> Los elementos se alinean al principio del contenedor.</li>
+        <li><strong>center:</strong> Los elementos se alinean en el centro.</li>
+        <li><strong>space-between:</strong> Los elementos se distribuyen con espacio entre ellos.</li>
+        <li><strong>space-around:</strong> Los elementos se distribuyen con espacio alrededor de ellos.</li>
+    </ul>
+
+    <div class="example-title">Ejemplo con <code>justify-content: flex-start</code>:</div>
+    <div class="container" style="justify-content: flex-start;">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <div class="example-title">Ejemplo con <code>justify-content: center</code>:</div>
+    <div class="container" style="justify-content: center;">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <div class="example-title">Ejemplo con <code>justify-content: space-between</code>:</div>
+    <div class="container" style="justify-content: space-between;">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <h2>3. <code>align-items</code></h2>
+    <p>
+        La propiedad <code>align-items</code> controla la alineación de los elementos a lo largo del eje transversal (perpendicular al principal). Algunos valores comunes son:
+    </p>
+    <ul>
+        <li><strong>stretch:</strong> Los elementos se estiran para llenar el contenedor (valor por defecto).</li>
+        <li><strong>center:</strong> Los elementos se alinean en el centro verticalmente.</li>
+        <li><strong>flex-start:</strong> Los elementos se alinean al principio del eje transversal.</li>
+    </ul>
+
+    <div class="example-title">Ejemplo con <code>align-items: flex-start</code>:</div>
+    <div class="container" style="align-items: flex-start; height: 200px;">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <div class="example-title">Ejemplo con <code>align-items: center</code>:</div>
+    <div class="container" style="align-items: center; height: 200px;">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+    <div class="example-title">Ejemplo con <code>align-items: stretch</code> (por defecto):</div>
+    <div class="container" style="align-items: stretch; height: 200px;">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Superior</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#superior{
+    background-image: url(imagenes/UAT.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    background-color: rgb(255, 136, 0);
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 136, 0);
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background-color: rgb(255, 145, 0);
+}
+.sobrepuesto{
+color:white;
+position: absolute;
+right: 35%;
+top: 40%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Biografia</a></li>
+                <li><a href="#services">Acerca de</a></li>
+                <li><a href="#contact">Preguntas frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="superior">
+    <h1 class="sobrepuesto">Bienvenidos a la poderosisima <br>  Universidad Autonoma de Tamaulipas</h1>
+    <br>
+    <h1 class="sobrepuesto">Conoce mas sobre la UAT</h1>
+    </section>
+
+
+</body>
+</html>
